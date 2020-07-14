@@ -1589,10 +1589,6 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
         $this->pos += 4 + $length;
     }
 
-    public function setDefaultCodepage($val) {
-        $this->_defaultCodepage = $val;
-    }
-
     /**
      *    The NOTE record specifies a comment associated with a particular cell. In Excel 95 (BIFF7) and earlier versions,
      *        this record stores a note (cell note). This feature was significantly enhanced in Excel 97.
