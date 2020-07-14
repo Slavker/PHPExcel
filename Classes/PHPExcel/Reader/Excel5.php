@@ -229,6 +229,7 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
     private $codepage;
 
     private $_defaultCodepage = 'CP1252';
+
     /**
      * Shared formats
      *
@@ -1222,7 +1223,11 @@ class PHPExcel_Reader_Excel5 extends PHPExcel_Reader_Abstract implements PHPExce
 
         return $this->phpExcel;
     }
-    
+
+    public function setDefaultCodepage($val) {
+        $this->_defaultCodepage = $val;
+    }
+
     /**
      * Read record data from stream, decrypting as required
      *
